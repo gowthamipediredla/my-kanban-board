@@ -1,0 +1,60 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.button-style {
+  background-color: lightgreen;
+  padding: 5px;
+  border-color: lightgreen;
+  cursor: pointer;
+}
+input {
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.task {
+  box-shadow: 1px 2px 3px 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  min-height: 30px;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 7px;
+}
+
+.task-stage {
+  background-color: #e9ecef;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  flex: 1;
+  margin: 10px;
+  min-height: 300px;
+}
+
+.tasks-board {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 80px;
+}
+button,
+.delete {
+  cursor: pointer;
+}
+
+.disabled-btn {
+  cursor: not-allowed;
+}
+@media screen and (max-width: 768px) {
+  .tasks-board {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 70px;
+  }
+}
